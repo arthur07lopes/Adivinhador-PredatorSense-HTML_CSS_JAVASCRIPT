@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0A0D14">
+  <title>WORDSTRIKE | Arena de números</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="predator.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o jogo</a>
+  <header class="site-header">
+    <p class="brand">WORD<span>STRIKE</span></p>
+    <p class="system-tag">PREDATOR LAB / TREINO 03</p>
+  </header>
+  <main class="layout" id="main">
+    <section class="game-panel" aria-labelledby="game-title">
+      <p class="eyebrow">DESAFIO DE NÚMEROS / MODO SOLO</p>
+      <h1 id="game-title">Adivinhe o número. Vença a rodada.</h1>
+      <p class="intro">
+        Escolha um número de 1 a 100 e valide seu palpite.
+        Você tem cinco tentativas por rodada.
+      </p>
+      <div class="round-strip" role="group" aria-label="Informações da rodada">
+        <p>RODADA <span id="round-number">1</span></p>
+        <p>TENTATIVAS <span id="attempts-left">5</span> / 5</p>
+      </div>
+      <section class="briefing" aria-labelledby="hint-title">
+        <p class="section-code">INTEL / INTERVALO ATIVO</p>
+        <h2 id="hint-title">Intervalo da rodada</h2>
+        <p id="hint-text">Adivinhe um número inteiro entre 1 e 100.</p>
+      </section>
+      <form id="guess-form" novalidate>
+        <label for="guess-input">Digite seu palpite</label>
+        <p class="field-help" id="input-help">
+          Escolha um número inteiro de 1 a 100.
+        </p>
+        <div class="input-row">
+          <input
+            id="guess-input"
+            name="guess"
+            type="number"
+            min="1"
+            max="100"
+            step="1"
+            autocomplete="off"
+            inputmode="numeric"
+            aria-describedby="input-help">
+          <button class="submit-button" type="submit">VALIDAR RESPOSTA</button>
+        </div>
+      </form>
+      <div class="feedback-panel" aria-labelledby="feedback-title">
+        <p class="section-code" id="feedback-title">RETORNO DO SISTEMA</p>
+        <p class="game-status" id="game-status" role="status" aria-atomic="true">
+          Digite um número entre 1 e 100 e envie seu palpite.
+        </p>
+      </div>
+      <button class="new-round-button" id="new-round-button" type="button">
+        INICIAR NOVA RODADA
+      </button>
+      <p class="keyboard-hint">
+        Teclado: Tab percorre os controles; use as setas no campo numérico e Enter para enviar.
+      </p>
+    </section>
+    <aside class="visual-panel" aria-labelledby="visual-title">
+      <p class="section-code">HARDWARE / REFERÊNCIA VISUAL</p>
+      <h2 id="visual-title">Mentalidade de arena</h2>
+      <figure class="product-figure">
+        <img
+          src="https://cdn.assets.prezly.com/d3ea28bb-2052-4d17-866b-f048c5aad35b/Predator-Helios-300-PH315-53-Standard_03.png"
+          alt="Fotografia oficial de um notebook gamer Acer Predator Helios 300, com carcaça escura e detalhes azulados."
+          width="512"
+          height="512"
+          loading="lazy"
+          decoding="async">
+        <figcaption>
+          Fotografia de produto publicada pela Acer Newsroom.
+          <a
+            href="https://news.acer.com/acer-refreshes-its-predator-helios-predator-triton-and-nitro-gaming-notebooks">
+            Ver publicação original
+          </a>.
+        </figcaption>
+      </figure>
+      <div class="visual-note">
+        <p class="section-code">OBJETIVO</p>
+        <p>
+          Acertar o número secreto antes de esgotar as tentativas.
+          Cada envio produz um retorno claro, sem depender apenas de cor.
+        </p>
+      </div>
+    </aside>
+  </main>
+  <footer class="site-footer">
+    <p>Projeto educativo independente. Não é um produto oficial da Acer ou da Predator.</p>
+    <p>Imagem carregada por URL externa; a disponibilidade depende do site de origem.</p>
+  </footer>
+</body>
+</html>
