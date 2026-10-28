@@ -1,0 +1,1 @@
+# Adivinhador-PredatorSense-HTML_CSS_JAVASCRIPT
